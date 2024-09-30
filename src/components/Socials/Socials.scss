@@ -1,0 +1,36 @@
+@import '../../scss/variables';
+
+.socials {
+
+    @include responsive(pc) {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        li {
+            background-color: $lightBlue;
+            padding: .5rem .8rem;
+            cursor: pointer;
+            border-radius: 1rem;
+            transition: all ease 500ms;
+
+            a {
+                color: #000000;
+            }
+
+            &:hover {
+                background-color: $pink;
+            }
+
+            svg {
+                font-size: 3rem;
+            }
+        }
+    }
+}

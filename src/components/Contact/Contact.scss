@@ -1,0 +1,59 @@
+@import '../../scss/variables';
+
+.contact {
+    padding: 5rem 0;
+    background-color: $bgDark;
+    text-align: center;
+    color: #ffffff;
+    max-width: 60%;
+    margin: 0 auto;
+
+    @include responsive(tablet) {
+        max-width: 90%;
+    }
+
+    h3 {
+        font-weight: 400;
+        font-size: 2.4rem;
+
+        @include responsive(tablet) {
+            font-size: 2rem;
+        }
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 5rem;
+        margin-top: 3rem;
+
+        .card {
+            background-color: #000000;
+            border: 1px solid $lightBlue;
+            box-shadow: 1px 1px 5px $lightBlue;
+            padding: 2rem;
+            transition: all ease 500ms;
+            flex: 1;
+
+            &:hover {
+                box-shadow: 1px 1px 5px $pink;
+                border: 1px solid $pink;
+            }
+
+            svg {
+                font-size: 4rem;
+                color: $lightBlue;
+            }
+
+            h4 {
+                cursor: default;
+            }
+
+            p {
+                padding-top: 1rem;
+            }
+        }
+    }
+}

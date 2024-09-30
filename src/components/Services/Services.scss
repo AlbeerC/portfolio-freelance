@@ -1,0 +1,53 @@
+@import '../../scss/variables';
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: stretch;
+    gap: 3rem;
+    padding: 2rem 8rem;
+
+    @include responsive(pc) {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        padding: 2rem;
+    }
+
+    @include responsive(tablet) {
+        grid-template-columns: 1fr;
+    }
+
+    .service {
+        padding: 1rem;
+        background-color: $bgDark;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 1rem;
+        color: #ffffff;
+        text-align: center;
+        cursor: default;
+        box-shadow: 1px 1px 5px $lightBlue;
+        transition: all ease 500ms;
+
+        &:hover {
+            transform: translateY(-3%);
+            box-shadow: 1px 1px 5px $pink;
+        }
+
+        svg {
+            font-size: 4rem;
+            color: $lightBlue;
+        }
+
+        h3 {
+            font-size: 1.9rem;
+            padding: 1rem 0;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+    }
+}

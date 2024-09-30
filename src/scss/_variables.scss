@@ -1,0 +1,28 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&display=swap');
+
+$titleFont: 'Poppins', sans-serif;
+$textFont: 'Sintony', sans-serif;
+
+// Colors
+$lightBlue: #4de5c1;
+$pink: #ce12ce;
+$bgDark: #1a1a1a;
+$bgLight: #2b2b2b;
+
+/* Responsive */
+$pc: 1100px;
+$tablet: 768px;
+
+@mixin responsive ($medida) {
+    @if $medida == pc {
+        @media (max-width: $pc) {
+            @content;
+        }
+    } @else if $medida == tablet {
+        @media (max-width: $tablet) {
+            @content;
+        }
+    }
+}

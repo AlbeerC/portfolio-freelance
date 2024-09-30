@@ -1,0 +1,165 @@
+@import '../../scss/variables';
+
+.hero {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 4px;
+    background-image: url(../../assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 88vh;
+    padding: 5rem 7rem;
+
+    @include responsive(pc) {
+        justify-content: center;
+    }
+
+    .left {
+        padding-left: 1rem;
+
+        .top {
+            display: flex;
+            align-items: center;
+            gap: 6rem;
+
+            @include responsive(tablet) {
+                gap: 2rem;
+            }
+
+            img {
+                width: 15rem;
+                height: 15rem;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-top: 2rem;
+
+                @media (max-width: 480px) {
+                    width: 13rem;
+                    height: 13rem;
+                }
+            }
+
+            .titles {
+
+                h2 {
+                    max-width: 20rem;
+                    padding: 1.5rem 0;
+                    color: $lightBlue;
+                    font-size: 4.5rem;
+
+                    @include responsive(tablet) {
+                        font-size: 3.5rem;
+                    }
+                }
+
+                h3 {
+                    font-size: 3rem;
+                    text-align: center;
+
+                    @include responsive(tablet) {
+                        font-size: 2.5rem;
+                        text-align: left;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            
+            h4 {
+                padding-top: 2rem;
+                font-weight: bold;
+                font-size: 3rem;
+                letter-spacing: 1px;
+
+                @include responsive(tablet) {
+                    font-size: 2.5rem;
+                }
+            }
+
+            button {
+                margin-top: 3rem;
+                background-color: $lightBlue;
+                padding: 1rem 2rem;
+                border-radius: 2rem;
+                color: #000000;
+                font-size: 2rem;
+                border: 2px solid #000000;
+                cursor: pointer;
+                animation: flicker 2s linear infinite;
+                transition: 1s ease;
+                font-family: $titleFont;
+                font-weight: bold;
+                text-transform: uppercase;
+
+                a {
+                    color: #000000;
+                }
+
+                &:hover {
+                    animation: none;
+                }
+            }
+        }
+    }
+
+    .right {
+
+        img {
+            width: 50rem;
+            height: auto;
+            padding-top: 6rem;
+            transition: all ease 1s;
+            animation: float 5s ease-in-out infinite;
+
+            &:hover {
+                filter: grayscale(70%);
+            }
+
+            @include responsive(pc) {
+                display: none;
+            }
+        }
+    }
+
+    .scroll-down {
+        position: absolute;
+        top: 86vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 10rem;
+        width: auto;
+
+        @include responsive(tablet) {
+            top: 84vh;
+        }
+    }
+}
+
+
+@keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+}
+
+@keyframes flicker  {
+    0%, 41%, 45%, 47%, 49.5%, 100%  { 
+        opacity: 1;
+    }
+
+    42%, 44%, 46%,48%,  50%  { 
+        opacity: 0; 
+    }
+}
