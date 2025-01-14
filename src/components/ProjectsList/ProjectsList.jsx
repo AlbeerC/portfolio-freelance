@@ -2,6 +2,7 @@ import './ProjectsList.scss'
 import Slider from '../Slider/Slider'
 import { useEffect, useState } from 'react'
 import Loading from '../Loading/Loading'
+import ProjectCard from '../ProjectCard/ProjectCard'
 
 function ProjectsList () {
 
@@ -30,7 +31,11 @@ function ProjectsList () {
     return (
         <section className="projects" id='projects'>
             <h2 className='section-title'>Mis proyectos</h2>
-            <Slider data={data} />
+                <div className="projects-list">
+                    {data.map((project, index) => (
+                        <ProjectCard key={project.id} project={project} />
+                    ))}
+                </div>
         </section>
     )
 }

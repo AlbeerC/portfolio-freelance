@@ -4,15 +4,22 @@ import { SiTypescript, SiFirebase, SiTailwindcss, SiReact } from "react-icons/si
 import { LuFigma } from "react-icons/lu";
 import { IoLogoJavascript } from "react-icons/io";
 import Services from '../Services/Services';
+import face from '../../assets/foto-cv.jpeg'
+import Socials from '../Socials/Socials'
 
 function About () {
 
     return (
         <section className="about" id='aboutme'>
-            <h2 className='section-title'>Sobre mi</h2>
-            <p className='text'>Mi nombre es Alberto Caminos, tengo 21 años y soy de Argentina. Desarrollo sitios web y aplicaciones móviles que combinan funcionalidad con diseño intuitivo, buscando crear experiencias de usuario fáciles de usar para cualquier persona. Veo cada proyecto como una oportunidad para seguir mejorando y crear productos que realmente marquen la diferencia.</p>
-            <h3 className='services-title'>Servicios</h3>
-            <Services />
+            <div className="left">
+                <img src={face} alt="me" />
+            </div>
+            <div className="right">
+                <h2 className='section-title'>Sobre mi</h2>
+                <p className='text'>Soy Alberto Caminos, un desarrollador web argentino con una gran pasión por crear sitios web que ayuden a los negocios a destacarse en línea, priorizando un diseño intuitivo y una experiencia de usuario fácil de usar para cualquier persona. Aunque estoy iniciando mi carrera como freelancer, estoy comprometido a ofrecer soluciones personalizadas y de calidad que respondan a las necesidades específicas de cada proyecto.</p>
+                <Socials />
+            </div>
+
         </section>
     )
 }

@@ -37,3 +37,9 @@ a {
 section[id] {
     scroll-margin-top: 5rem;
 }
+
+header, section, footer {
+    @include responsive(giant) {
+        padding: 5rem 15rem !important;
+    }
+}

@@ -17,7 +17,7 @@ function Hero () {
                     <img src={gif} alt="gif of a man thinking in front a pc" />
                 </div>
                 <div className="bottom">
-                    <h4>Desarrollador Web y Móvil</h4>
+                    <h4>Desarrollador Web</h4>
                     <button><a href='#projects'>Ver proyectos</a></button>
                 </div>
             </article>
@@ -26,7 +26,6 @@ function Hero () {
                 <img src={desktop} alt="screnshot of one of my projects" />
             </article>
             
-            <Socials />
             <img src={scrollDown} className='scroll-down' alt="animation scroll down gif" />
         </section>
     )

@@ -116,6 +116,10 @@
             transition: all ease 1s;
             animation: float 5s ease-in-out infinite;
 
+            @include responsive(giant) {
+                width: 70rem;
+            }
+
             &:hover {
                 filter: grayscale(70%);
             }
