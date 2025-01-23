@@ -21,5 +21,12 @@
         "url": "https://albeerc.github.io/coffee-shop/",
         "title": "Café de la casa",
         "text": "Sitio de una cafetería con el menú"
+    },
+    {
+        "id": 4,
+        "img": "./images/dublin.png",
+        "url": "https://dublin-f482a.web.app/",
+        "title": "Dublín",
+        "text": "Restaurante con menú administrable desde un panel y sistema de reservas"
     }
 ]
