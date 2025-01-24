@@ -5,7 +5,7 @@
         "imgmobile": "/images/gympower.png",
         "url": "https://gympower25.vercel.app/",
         "title": "Gym power",
-        "text": "Sitio de un gimnasio"
+        "text": "Sitio de un gimnasio con información básica de lugar"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "imgmobile": "/images/skullmaster-mobile.png",
         "url": "https://skull-master.vercel.app/",
         "title": "Skull Master",
-        "text": "Sitio web de un estudio de tatuajes"
+        "text": "Sitio web de un estudio de tatuajes con formulario para consultas"
     },
     {
         "id": 3,

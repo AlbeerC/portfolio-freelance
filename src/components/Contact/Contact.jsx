@@ -1,45 +1,26 @@
 import './Contact.scss'
 import { FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa"
 import { FaSquareXTwitter } from "react-icons/fa6"
+import { useState } from 'react'
 
 function Contact () {
 
     return (
         <section className="contact" id='contact'>
-{/*             
-            <h3>Transformando ideas en realidad: comencemos a colaborar.</h3>
-            <div className="cards">
-                <div className="card">
-                    <FaSquareXTwitter />
-                    <h4>X</h4>
-                    <p>AlberCaminos03</p>
-                </div>
-                <div className="card">
-                    <FaEnvelope />
-                    <h4>E-mail</h4>
-                    <p>caminosalbertodev@gmail.com</p>
-                </div>
-                <div className="card">
-                    <FaWhatsapp />
-                    <h4>Whatsapp</h4>
-                    <p>+54 2284697534</p>
-                </div>
-            </div> */}
-
             <h2 className='section-title'>Contactame</h2>
             <article className="flex">
-                <form action="">
+                <form action='https://formspree.io/f/mbldljzz' method='POST'>
                     <div className="field">
                         <label htmlFor="">Nombre</label>
-                        <input type="text" placeholder='Tu nombre'/>
+                        <input type="text" name='name' placeholder='Tu nombre' required/>
                     </div>
                     <div className="field">
                         <label htmlFor="">E-mail</label>
-                        <input type="email" placeholder='tuemail@gmail.com'/>
+                        <input type="email" name='email' placeholder='tuemail@gmail.com' required/>
                     </div>
                     <div className="field">
                         <label htmlFor="">Mensaje</label>
-                        <textarea name="" id="" placeholder='Tu mensaje'></textarea>
+                        <textarea name="message" id="" placeholder='Tu mensaje' required></textarea>
                     </div>
 
                     <button type='submit'>Enviar</button>

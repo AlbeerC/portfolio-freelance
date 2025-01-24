@@ -1,11 +1,11 @@
 @import '../../scss/variables.scss';
 
 .project-card {
-    max-width: 50rem;
     border-radius: 2rem;
     background-color: $bgLight;
     color: #ffffff;
     padding: 1rem;
+    width: 48%;
 
     @include responsive (tablet) {
         max-width: 90vw;
