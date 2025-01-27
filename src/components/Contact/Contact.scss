@@ -97,6 +97,10 @@
                 color: #7b74ff;
                 text-decoration: none;
             }
+
+            @include responsive (tablet) {
+                font-size: 1.5rem;
+            }
         }
     }
 }

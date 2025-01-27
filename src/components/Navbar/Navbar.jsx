@@ -25,7 +25,7 @@ function Navbar () {
                 <ul>
                     <li><a href='/#home' className='active'>Inicio</a></li>
                     <li><Link to="/precios">Servicios y precios</Link></li>
-                    <li><a href="">Proceso</a></li>
+                    <li><Link to="/proceso">Proceso</Link></li>
                     <li><a href='/#contact'>Contacto</a></li>
                 </ul>
             </nav>
