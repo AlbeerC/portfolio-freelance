@@ -24,7 +24,7 @@ function Navbar () {
             <nav className={showMenu ? 'show' : 'hide'}>
                 <ul>
                     <li><a href='/#home' className='active'>Inicio</a></li>
-                    <li><a href="">Servicios y precios</a></li>
+                    <li><Link to="/precios">Servicios y precios</Link></li>
                     <li><a href="">Proceso</a></li>
                     <li><a href='/#contact'>Contacto</a></li>
                 </ul>

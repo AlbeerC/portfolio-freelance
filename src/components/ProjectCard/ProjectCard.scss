@@ -8,7 +8,7 @@
     width: 48%;
 
     @include responsive (tablet) {
-        max-width: 90vw;
+        width: 90vw;
     }
 
     img {
