@@ -17,6 +17,10 @@
         justify-content: center;
     }
 
+    @media (max-width: 480px) {
+        padding: 0 7rem 5rem 7rem;
+    }
+
     .left {
         padding-left: 1rem;
 

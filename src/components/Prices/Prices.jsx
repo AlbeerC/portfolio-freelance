@@ -50,7 +50,7 @@ function Prices () {
     ]
 
     return (
-        <section className="prices">
+        <section className="prices" id='prices'>
             <div className="texts">
                 <h2 className="section-title">Planes de servicio</h2>
                 <p>Estimación general del tiempo y presupuesto dependiendo del tipo de proyecto. Tener en cuenta que estos valores pueden variar dependiendo de los detalles específicos y funcionalidades requeridas.</p>

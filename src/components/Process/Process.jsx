@@ -57,7 +57,7 @@ function Process () {
     ]
 
     return (
-        <section className="process">
+        <section className="process" id='process'>
             <h2 className="section-title">Proceso</h2>
 
             <VerticalTimeline>

@@ -47,6 +47,7 @@
 
             @include responsive(pc) {
                 max-width: 100%;
+                width: 100%;
             }
             
             &:hover {
