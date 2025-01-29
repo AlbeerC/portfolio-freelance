@@ -17,6 +17,7 @@ function Navbar () {
         setShowMenu(false)
     }
 
+
     return (
         <header>
             <div className="nav-mobile">
@@ -28,7 +29,7 @@ function Navbar () {
                     <li><a href='/#home' className='active' onClick={handleScrollToTop}>Inicio</a></li>
                     <li><Link to="/precios" onClick={handleScrollToTop}>Precios</Link></li>
                     <li><Link to="/proceso" onClick={handleScrollToTop}>Proceso</Link></li>
-                    <li><a href='/#contact' onClick={handleScrollToTop}>Contacto</a></li>
+                    <li><Link to='/#contact' onClick={() => setShowMenu(false)}>Contacto</Link></li>
                 </ul>
             </nav>
         </header>

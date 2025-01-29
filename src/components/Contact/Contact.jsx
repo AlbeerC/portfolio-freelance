@@ -1,7 +1,4 @@
 import './Contact.scss'
-import { FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa"
-import { FaSquareXTwitter } from "react-icons/fa6"
-import { useState } from 'react'
 
 function Contact () {
 

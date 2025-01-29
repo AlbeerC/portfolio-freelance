@@ -31,6 +31,7 @@ function ProjectsList () {
     return (
         <section className="projects" id='projects'>
             <h2 className='section-title'>Mis proyectos</h2>
+            <p className='subtitle'>Estos son ejemplos de los tipos de sitios que desarrollo, diseñados para adaptarse a diferentes necesidades y sectores. Desde sitios simples con funcionalidades básicas hasta sitios más avanzados</p>
                 <div className="projects-list">
                     {data.map((project, index) => (
                         <ProjectCard key={project.id} project={project} />

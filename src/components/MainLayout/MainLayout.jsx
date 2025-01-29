@@ -11,12 +11,14 @@ function MainLayout() {
 
   useEffect(() => {
     if (location.hash) {
-      const element = document.getElementById(location.hash.substring(1));
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+      setTimeout(() => {
+        const element = document.querySelector(location.hash)
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" })
+        }
+      }, 100) // Pequeña espera para asegurar que la vista se ha cargado
     }
-  }, [location]);
+  }, [location])
 
   return (
     <main>
