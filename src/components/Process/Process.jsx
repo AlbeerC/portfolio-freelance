@@ -59,8 +59,9 @@ function Process () {
     return (
         <section className="process" id='process'>
             <h2 className="section-title">Proceso</h2>
+            <p className='subtitle'>Ejemplo de un proceso para la construcción de un sitio web desde cero</p>
 
-            <VerticalTimeline>
+            <VerticalTimeline className='timeline'>
                 {steps.map((step, idx) => (
                     <VerticalTimelineElement
                     key={idx}
