@@ -16,7 +16,7 @@ function MainLayout() {
         if (element) {
           element.scrollIntoView({ behavior: "smooth" })
         }
-      }, 100) // Pequeña espera para asegurar que la vista se ha cargado
+      }, 300) // Pequeña espera para asegurar que la vista se ha cargado
     }
   }, [location])
 

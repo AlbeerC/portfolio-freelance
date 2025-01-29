@@ -47,4 +47,13 @@ header, section, footer {
 .subtitle {
     max-width: 80%;
     margin: 0 auto;
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #ffffff;
+
+    @include responsive(tablet) {
+        max-width: 100%;
+        font-size: 1.3rem !important;
+    }
 }
