@@ -40,7 +40,6 @@ function Prices () {
             features: [
               "+7 Secciones personalizadas",
               "Funcionalidades interactivas como autenticación de usuarios, calendario de reservas, base de datos básica, panel de administración básico",
-              "Optimización SEO avanzada",
               "Formulario de contacto personalizado",
               "Integración con redes sociales y herramientas de marketing",
               "Diseño adaptado a cualquier dispositivo",
