@@ -37,8 +37,8 @@ function Contact () {
                         <p><a href="https://x.com/AlberCaminos03" target='blank'>AlberCaminos03</a></p>
                     </div>
                     <div className="cont">
-                        <span>Linkedin</span>
-                        <p><a href="https://www.linkedin.com/in/alberto-caminos/" target='blank'>Alberto Caminos</a></p>
+                        <span>Instagram</span>
+                        <p><a href="https://www.instagram.com/albertodesarrolloweb/" target='blank'>Alberto Caminos</a></p>
                     </div>
                 </div>
             </article>
